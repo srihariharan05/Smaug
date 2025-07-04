@@ -1,0 +1,3 @@
+Segmentation fault (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)

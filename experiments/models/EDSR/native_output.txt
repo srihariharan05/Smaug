@@ -1,0 +1,912 @@
+Model topology file: edsr_smv_topo.pbtxt
+Model parameters file: edsr_smv_params.pb
+Number of accelerators: 1
+======================================================
+      Loading the network model...
+======================================================
+Adding input (Data).
+Adding data (Data).
+Adding conv0 (Convolution3d).
+Adding data_1 (Data).
+Adding bn0_add_tensor (EltwiseAdd).
+Adding data_2 (Data).
+Adding conv1_1 (Convolution3d).
+Adding data_3 (Data).
+Adding bn1 _1 (EltwiseAdd).
+Adding relu1 _1 (ReLU).
+Adding data_4 (Data).
+Adding conv1_2 (Convolution3d).
+Adding data_5 (Data).
+Adding bn1 _2 (EltwiseAdd).
+Adding add1 (EltwiseAdd).
+Adding data_6 (Data).
+Adding conv1_1_1 (Convolution3d).
+Adding data_7 (Data).
+Adding bn1 _1_1 (EltwiseAdd).
+Adding relu1 _1_1 (ReLU).
+Adding data_8 (Data).
+Adding conv1_2_1 (Convolution3d).
+Adding data_9 (Data).
+Adding bn1 _2_1 (EltwiseAdd).
+Adding add1_1 (EltwiseAdd).
+Adding data_10 (Data).
+Adding conv1_1_2 (Convolution3d).
+Adding data_11 (Data).
+Adding bn1 _1_2 (EltwiseAdd).
+Adding relu1 _1_2 (ReLU).
+Adding data_12 (Data).
+Adding conv1_2_2 (Convolution3d).
+Adding data_13 (Data).
+Adding bn1 _2_2 (EltwiseAdd).
+Adding add1_2 (EltwiseAdd).
+Adding data_14 (Data).
+Adding conv1_1_3 (Convolution3d).
+Adding data_15 (Data).
+Adding bn1 _1_3 (EltwiseAdd).
+Adding relu1 _1_3 (ReLU).
+Adding data_16 (Data).
+Adding conv1_2_3 (Convolution3d).
+Adding data_17 (Data).
+Adding bn1 _2_3 (EltwiseAdd).
+Adding add1_3 (EltwiseAdd).
+Adding data_18 (Data).
+Adding conv1_1_4 (Convolution3d).
+Adding data_19 (Data).
+Adding bn1 _1_4 (EltwiseAdd).
+Adding relu1 _1_4 (ReLU).
+Adding data_20 (Data).
+Adding conv1_2_4 (Convolution3d).
+Adding data_21 (Data).
+Adding bn1 _2_4 (EltwiseAdd).
+Adding add1_4 (EltwiseAdd).
+Adding data_22 (Data).
+Adding conv6_chkpt (Convolution3d).
+Adding data_23 (Data).
+Adding bn6_add_tensor (EltwiseAdd).
+Adding  add_inp_conv (EltwiseAdd).
+Adding data_24 (Data).
+Adding conv7 (Convolution3d).
+Adding data_25 (Data).
+Adding bn7_add_tensor (EltwiseAdd).
+Adding  final_relu (ReLU).
+======================================================
+      Summary of the network.
+======================================================
+____________________________________________________________________________________________
+Layer (type)                             Output shape                 Parameters  
+____________________________________________________________________________________________
+data_25 (Data)                           (1, 48, 48, 12)                  0       
+____________________________________________________________________________________________
+data_24 (Data)                           (12, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_23 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_22 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_21 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_20 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_19 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_18 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_17 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_16 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_15 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_14 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_13 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_12 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_11 (Data)                           (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_10 (Data)                           (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_9 (Data)                            (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_8 (Data)                            (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_7 (Data)                            (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_6 (Data)                            (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_5 (Data)                            (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_4 (Data)                            (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_3 (Data)                            (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data_2 (Data)                            (32, 3, 3, 32)                   0       
+____________________________________________________________________________________________
+data_1 (Data)                            (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+data (Data)                              (32, 3, 3, 3)                    0       
+____________________________________________________________________________________________
+input (Data)                             (1, 48, 48, 3)                   0       
+____________________________________________________________________________________________
+conv0 (Convolution3d)                    (1, 48, 48, 32)                 864      
+____________________________________________________________________________________________
+bn0_add_tensor (EltwiseAdd)              (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_1 (Convolution3d)                  (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _1 (EltwiseAdd)                      (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+relu1 _1 (ReLU)                          (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_2 (Convolution3d)                  (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _2 (EltwiseAdd)                      (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+add1 (EltwiseAdd)                        (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_1_1 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _1_1 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+relu1 _1_1 (ReLU)                        (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_2_1 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _2_1 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+add1_1 (EltwiseAdd)                      (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_1_2 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _1_2 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+relu1 _1_2 (ReLU)                        (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_2_2 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _2_2 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+add1_2 (EltwiseAdd)                      (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_1_3 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _1_3 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+relu1 _1_3 (ReLU)                        (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_2_3 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _2_3 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+add1_3 (EltwiseAdd)                      (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_1_4 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _1_4 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+relu1 _1_4 (ReLU)                        (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv1_2_4 (Convolution3d)                (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn1 _2_4 (EltwiseAdd)                    (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+add1_4 (EltwiseAdd)                      (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv6_chkpt (Convolution3d)              (1, 48, 48, 32)                 9216     
+____________________________________________________________________________________________
+bn6_add_tensor (EltwiseAdd)              (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+ add_inp_conv (EltwiseAdd)               (1, 48, 48, 32)                  0       
+____________________________________________________________________________________________
+conv7 (Convolution3d)                    (1, 48, 48, 12)                 3456     
+____________________________________________________________________________________________
+bn7_add_tensor (EltwiseAdd)              (1, 48, 48, 12)                  0       
+____________________________________________________________________________________________
+ final_relu (ReLU)                       (1, 48, 48, 12)                  0       
+____________________________________________________________________________________________
+======================================================
+      Tiling operators of the network...
+======================================================
+Tiling  add_inp_conv (EltwiseAdd).
+  Tiled Tensor bn6_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn0_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor  add_inp_conv/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling  final_relu (ReLU).
+  Tiled Tensor bn7_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 12)
+    tile shape (1, 36864), number of tiles: 1
+  Tiled Tensor  final_relu/output0:
+    original tensor shape: (1, 48, 48, 12)
+    tile shape (1, 36864), number of tiles: 1
+Tiling add1 (EltwiseAdd).
+  Tiled Tensor bn1 _2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn0_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling add1_1 (EltwiseAdd).
+  Tiled Tensor bn1 _2_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling add1_2 (EltwiseAdd).
+  Tiled Tensor bn1 _2_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling add1_3 (EltwiseAdd).
+  Tiled Tensor bn1 _2_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling add1_4 (EltwiseAdd).
+  Tiled Tensor bn1 _2_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor add1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn0_add_tensor (EltwiseAdd).
+  Tiled Tensor conv0/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_1/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn0_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _1 (EltwiseAdd).
+  Tiled Tensor conv1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_3/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _1_1 (EltwiseAdd).
+  Tiled Tensor conv1_1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_7/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _1_2 (EltwiseAdd).
+  Tiled Tensor conv1_1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_11/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _1_3 (EltwiseAdd).
+  Tiled Tensor conv1_1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_15/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _1_4 (EltwiseAdd).
+  Tiled Tensor conv1_1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_19/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _2 (EltwiseAdd).
+  Tiled Tensor conv1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_5/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _2_1 (EltwiseAdd).
+  Tiled Tensor conv1_2_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_9/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _2_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _2_2 (EltwiseAdd).
+  Tiled Tensor conv1_2_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_13/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _2_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _2_3 (EltwiseAdd).
+  Tiled Tensor conv1_2_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_17/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _2_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn1 _2_4 (EltwiseAdd).
+  Tiled Tensor conv1_2_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_21/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn1 _2_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn6_add_tensor (EltwiseAdd).
+  Tiled Tensor conv6_chkpt/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor data_23/input0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor bn6_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling bn7_add_tensor (EltwiseAdd).
+  Tiled Tensor conv7/output0:
+    original tensor shape: (1, 48, 48, 12)
+    tile shape (1, 36864), number of tiles: 1
+  Tiled Tensor data_25/input0:
+    original tensor shape: (1, 48, 48, 12)
+    tile shape (1, 36864), number of tiles: 1
+  Tiled Tensor bn7_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 12)
+    tile shape (1, 36864), number of tiles: 1
+Tiling conv0 (Convolution3d).
+  Tiled Tensor input/input0:
+    original tensor shape: (1, 48, 48, 3)
+    tile shape: (1, 48, 48, 3), number of tiles: 1
+  Tiled Tensor data/input0:
+    original tensor shape: (32, 3, 3, 3)
+    tile shape: (32, 3, 3, 3), number of tiles: 1
+  Tiled Tensor conv0/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_1 (Convolution3d).
+  Tiled Tensor bn0_add_tensor/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_2/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_1_1 (Convolution3d).
+  Tiled Tensor add1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_6/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_1_2 (Convolution3d).
+  Tiled Tensor add1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_10/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_1_3 (Convolution3d).
+  Tiled Tensor add1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_14/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_1_4 (Convolution3d).
+  Tiled Tensor add1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_18/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_2 (Convolution3d).
+  Tiled Tensor relu1 _1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_4/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_2_1 (Convolution3d).
+  Tiled Tensor relu1 _1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_8/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_2_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_2_2 (Convolution3d).
+  Tiled Tensor relu1 _1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_12/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_2_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_2_3 (Convolution3d).
+  Tiled Tensor relu1 _1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_16/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_2_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv1_2_4 (Convolution3d).
+  Tiled Tensor relu1 _1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_20/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv1_2_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv6_chkpt (Convolution3d).
+  Tiled Tensor add1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_22/input0:
+    original tensor shape: (32, 3, 3, 32)
+    tile shape: (32, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv6_chkpt/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+Tiling conv7 (Convolution3d).
+  Tiled Tensor  add_inp_conv/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape: (1, 48, 48, 32), number of tiles: 1
+  Tiled Tensor data_24/input0:
+    original tensor shape: (12, 3, 3, 32)
+    tile shape: (12, 3, 3, 32), number of tiles: 1
+  Tiled Tensor conv7/output0:
+    original tensor shape: (1, 48, 48, 12)
+    tile shape: (1, 48, 48, 12), number of tiles: 1
+Tiling data (Data).
+Tiling data_1 (Data).
+Tiling data_10 (Data).
+Tiling data_11 (Data).
+Tiling data_12 (Data).
+Tiling data_13 (Data).
+Tiling data_14 (Data).
+Tiling data_15 (Data).
+Tiling data_16 (Data).
+Tiling data_17 (Data).
+Tiling data_18 (Data).
+Tiling data_19 (Data).
+Tiling data_2 (Data).
+Tiling data_20 (Data).
+Tiling data_21 (Data).
+Tiling data_22 (Data).
+Tiling data_23 (Data).
+Tiling data_24 (Data).
+Tiling data_25 (Data).
+Tiling data_3 (Data).
+Tiling data_4 (Data).
+Tiling data_5 (Data).
+Tiling data_6 (Data).
+Tiling data_7 (Data).
+Tiling data_8 (Data).
+Tiling data_9 (Data).
+Tiling input (Data).
+Tiling relu1 _1 (ReLU).
+  Tiled Tensor bn1 _1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor relu1 _1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling relu1 _1_1 (ReLU).
+  Tiled Tensor bn1 _1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor relu1 _1_1/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling relu1 _1_2 (ReLU).
+  Tiled Tensor bn1 _1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor relu1 _1_2/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling relu1 _1_3 (ReLU).
+  Tiled Tensor bn1 _1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor relu1 _1_3/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+Tiling relu1 _1_4 (ReLU).
+  Tiled Tensor bn1 _1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+  Tiled Tensor relu1 _1_4/output0:
+    original tensor shape: (1, 48, 48, 32)
+    tile shape (1, 73728), number of tiles: 1
+ total num of tiles 108 
+======================================================
+      Scheduling operators of the network...
+      Iteration : 0 
+======================================================
+Scheduling data (Data).
+data running 
+Scheduling data_1 (Data).
+data_1 running 
+Scheduling data_10 (Data).
+data_10 running 
+Scheduling data_11 (Data).
+data_11 running 
+Scheduling data_12 (Data).
+data_12 running 
+Scheduling data_13 (Data).
+data_13 running 
+Scheduling data_14 (Data).
+data_14 running 
+Scheduling data_15 (Data).
+data_15 running 
+Scheduling data_16 (Data).
+data_16 running 
+Scheduling data_17 (Data).
+data_17 running 
+Scheduling data_18 (Data).
+data_18 running 
+Scheduling data_19 (Data).
+data_19 running 
+Scheduling data_2 (Data).
+data_2 running 
+Scheduling data_20 (Data).
+data_20 running 
+Scheduling data_21 (Data).
+data_21 running 
+Scheduling data_22 (Data).
+data_22 running 
+Scheduling data_23 (Data).
+data_23 running 
+Scheduling data_24 (Data).
+data_24 running 
+Scheduling data_25 (Data).
+data_25 running 
+Scheduling data_3 (Data).
+data_3 running 
+Scheduling data_4 (Data).
+data_4 running 
+Scheduling data_5 (Data).
+data_5 running 
+Scheduling data_6 (Data).
+data_6 running 
+Scheduling data_7 (Data).
+data_7 running 
+Scheduling data_8 (Data).
+data_8 running 
+Scheduling data_9 (Data).
+data_9 running 
+Scheduling input (Data).
+input running 
+Scheduling conv0 (Convolution3d).
+conv0 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv0 latency : 0 ns 
+ Operators executed : 1   Latency per operator : 0 
+Scheduling bn0_add_tensor (EltwiseAdd).
+bn0_add_tensor running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn0_add_tensor latency : 0 ns 
+ Operators executed : 2   Latency per operator : 0 
+Scheduling conv1_1 (Convolution3d).
+conv1_1 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_1 latency : 0 ns 
+ Operators executed : 3   Latency per operator : 0 
+Scheduling bn1 _1 (EltwiseAdd).
+bn1 _1 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _1 latency : 0 ns 
+ Operators executed : 4   Latency per operator : 0 
+Scheduling relu1 _1 (ReLU).
+relu1 _1 running 
+Input: 0, output: 0
+ Invoking the kernel 
+relu1 _1 latency : 0 ns 
+ Operators executed : 5   Latency per operator : 0 
+Scheduling conv1_2 (Convolution3d).
+conv1_2 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_2 latency : 0 ns 
+ Operators executed : 6   Latency per operator : 0 
+Scheduling bn1 _2 (EltwiseAdd).
+bn1 _2 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _2 latency : 0 ns 
+ Operators executed : 7   Latency per operator : 0 
+Scheduling add1 (EltwiseAdd).
+add1 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+add1 latency : 0 ns 
+ Operators executed : 8   Latency per operator : 0 
+Scheduling conv1_1_1 (Convolution3d).
+conv1_1_1 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_1_1 latency : 0 ns 
+ Operators executed : 9   Latency per operator : 0 
+Scheduling bn1 _1_1 (EltwiseAdd).
+bn1 _1_1 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _1_1 latency : 0 ns 
+ Operators executed : 10   Latency per operator : 0 
+Scheduling relu1 _1_1 (ReLU).
+relu1 _1_1 running 
+Input: 0, output: 0
+ Invoking the kernel 
+relu1 _1_1 latency : 0 ns 
+ Operators executed : 11   Latency per operator : 0 
+Scheduling conv1_2_1 (Convolution3d).
+conv1_2_1 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_2_1 latency : 0 ns 
+ Operators executed : 12   Latency per operator : 0 
+Scheduling bn1 _2_1 (EltwiseAdd).
+bn1 _2_1 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _2_1 latency : 0 ns 
+ Operators executed : 13   Latency per operator : 0 
+Scheduling add1_1 (EltwiseAdd).
+add1_1 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+add1_1 latency : 0 ns 
+ Operators executed : 14   Latency per operator : 0 
+Scheduling conv1_1_2 (Convolution3d).
+conv1_1_2 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_1_2 latency : 0 ns 
+ Operators executed : 15   Latency per operator : 0 
+Scheduling bn1 _1_2 (EltwiseAdd).
+bn1 _1_2 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _1_2 latency : 0 ns 
+ Operators executed : 16   Latency per operator : 0 
+Scheduling relu1 _1_2 (ReLU).
+relu1 _1_2 running 
+Input: 0, output: 0
+ Invoking the kernel 
+relu1 _1_2 latency : 0 ns 
+ Operators executed : 17   Latency per operator : 0 
+Scheduling conv1_2_2 (Convolution3d).
+conv1_2_2 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_2_2 latency : 0 ns 
+ Operators executed : 18   Latency per operator : 0 
+Scheduling bn1 _2_2 (EltwiseAdd).
+bn1 _2_2 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _2_2 latency : 0 ns 
+ Operators executed : 19   Latency per operator : 0 
+Scheduling add1_2 (EltwiseAdd).
+add1_2 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+add1_2 latency : 0 ns 
+ Operators executed : 20   Latency per operator : 0 
+Scheduling conv1_1_3 (Convolution3d).
+conv1_1_3 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_1_3 latency : 0 ns 
+ Operators executed : 21   Latency per operator : 0 
+Scheduling bn1 _1_3 (EltwiseAdd).
+bn1 _1_3 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _1_3 latency : 0 ns 
+ Operators executed : 22   Latency per operator : 0 
+Scheduling relu1 _1_3 (ReLU).
+relu1 _1_3 running 
+Input: 0, output: 0
+ Invoking the kernel 
+relu1 _1_3 latency : 0 ns 
+ Operators executed : 23   Latency per operator : 0 
+Scheduling conv1_2_3 (Convolution3d).
+conv1_2_3 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_2_3 latency : 0 ns 
+ Operators executed : 24   Latency per operator : 0 
+Scheduling bn1 _2_3 (EltwiseAdd).
+bn1 _2_3 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _2_3 latency : 0 ns 
+ Operators executed : 25   Latency per operator : 0 
+Scheduling add1_3 (EltwiseAdd).
+add1_3 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+add1_3 latency : 0 ns 
+ Operators executed : 26   Latency per operator : 0 
+Scheduling conv1_1_4 (Convolution3d).
+conv1_1_4 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_1_4 latency : 0 ns 
+ Operators executed : 27   Latency per operator : 0 
+Scheduling bn1 _1_4 (EltwiseAdd).
+bn1 _1_4 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _1_4 latency : 0 ns 
+ Operators executed : 28   Latency per operator : 0 
+Scheduling relu1 _1_4 (ReLU).
+relu1 _1_4 running 
+Input: 0, output: 0
+ Invoking the kernel 
+relu1 _1_4 latency : 0 ns 
+ Operators executed : 29   Latency per operator : 0 
+Scheduling conv1_2_4 (Convolution3d).
+conv1_2_4 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv1_2_4 latency : 0 ns 
+ Operators executed : 30   Latency per operator : 0 
+Scheduling bn1 _2_4 (EltwiseAdd).
+bn1 _2_4 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn1 _2_4 latency : 0 ns 
+ Operators executed : 31   Latency per operator : 0 
+Scheduling add1_4 (EltwiseAdd).
+add1_4 running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+add1_4 latency : 0 ns 
+ Operators executed : 32   Latency per operator : 0 
+Scheduling conv6_chkpt (Convolution3d).
+conv6_chkpt running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv6_chkpt latency : 0 ns 
+ Operators executed : 33   Latency per operator : 0 
+Scheduling bn6_add_tensor (EltwiseAdd).
+bn6_add_tensor running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn6_add_tensor latency : 0 ns 
+ Operators executed : 34   Latency per operator : 0 
+Scheduling  add_inp_conv (EltwiseAdd).
+ add_inp_conv running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+ add_inp_conv latency : 0 ns 
+ Operators executed : 35   Latency per operator : 0 
+Scheduling conv7 (Convolution3d).
+conv7 running 
+Input: 0, weights: 0, output: 0
+invoking the kernel 
+Waiting for all accelerators to finish.
+All accelerators finished.
+conv7 latency : 0 ns 
+ Operators executed : 36   Latency per operator : 0 
+Scheduling bn7_add_tensor (EltwiseAdd).
+bn7_add_tensor running 
+Input0: 0, input1: 0, output: 0
+ Invoking the kernel 
+bn7_add_tensor latency : 0 ns 
+ Operators executed : 37   Latency per operator : 0 
+Scheduling  final_relu (ReLU).
+ final_relu running 
+Input: 0, output: 0
+ Invoking the kernel 
+ final_relu latency : 0 ns 
+ Operators executed : 38   Latency per operator : 0 

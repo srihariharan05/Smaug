@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 147751 ON n08-chronos CANCELLED AT 2025-05-27T04:33:56 DUE TO TIME LIMIT ***
